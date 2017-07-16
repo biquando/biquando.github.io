@@ -1,0 +1,26 @@
+#welcome-message {
+    font-family: sans-serif;
+    color: coral;
+}
+
+#test-link {
+    text-decoration: none;
+    color: aqua;
+    font-family: "Ubuntu", sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 3em;
+    border: 7px solid aqua;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: fff;
+    float: inherit;
+    display: inline-block;
+}
+
+#test-link:hover {
+    background-color: aqua;
+    color: #fff;
+}
