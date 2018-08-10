@@ -3,7 +3,7 @@
     color: coral;
 }
 
-#test-link {
+.test-link {
     text-decoration: none;
     color: aqua;
     font-family: "Roboto", sans-serif;
@@ -20,7 +20,7 @@
     display: inline-block;
 }
 
-#test-link:hover {
+.test-link:hover {
     background-color: aqua;
     color: #fff;
 }
