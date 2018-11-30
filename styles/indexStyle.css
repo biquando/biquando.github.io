@@ -1,12 +1,12 @@
 #welcome-message {
-    font: bold 50px "Roboto", sans-serif;
+    font: bold 50px "Source Sans Pro", sans-serif;
     color: coral;
 }
 
 .test-link {
     text-decoration: none;
     color: aqua;
-    font-family: "Roboto", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 2em;
