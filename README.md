@@ -1,2 +1,0 @@
-# biquando.github.io
-This is the source for my amazing testing website at the link posted above. The panda is not mine. All code (except favicon html) is written by hand, so it's not the best. <sarcasm>But my website totally is.</sarcasm>

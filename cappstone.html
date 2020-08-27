@@ -1,55 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <title>Cappstone</title>
+        <meta charset="utf-8" />
+    </head>
 
-<head>
+    <body>
+        <iframe
+            width="889"
+            height="500"
+            src="https://www.youtube.com/embed/BIoLUyballk"
+        >
+        </iframe>
 
-    <title>Cappstone</title>
-    <meta charset="utf-8">
-    
-    <link href="https://fonts.googleapis.com/css?family=Carter+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <p>
+            Cappstone is an app that allows students to store printed or
+            handwritten notes as digital documents and analyze them using
+            artificial intelligence. The app recognizes text in pictures using
+            OCR and can answer natural-language questions about the text.<br /><br />
 
-</head>
+            If you notice any weird cuts in the video, it's because the app
+            sometimes stops the recording when the camera is opened for some
+            reason.<br /><br />
 
-<body>
+            All the code can be found here:
+            <a href="https://github.com/biquando/Cappstone" target="_blank"
+                >https://github.com/biquando/Cappstone</a
+            ><br /><br />
 
+            Checkpoint A:<br />
+            I have accomplished my goal for this checkpoint. The basic UI is
+            built, and the app is able to create and store documents. So far,
+            documents can only be created from text, and nothing can be done
+            with them yet. By the next checkpoint, the “Upload Photo” feature
+            will be functional, and the app will (hopefully) be able to read
+            text from the picture via machine learning. In addition, there will
+            be AI-related functions to analyze the text in a document. There are
+            still a couple UI improvements that I want to make before checkpoint
+            C.<br /><br />
 
-    <iframe width="889" height="500"
-            src="https://www.youtube.com/embed/BIoLUyballk">
-    </iframe>
-    
-    <p>Cappstone is an app that allows students to store printed or handwritten notes as digital documents and analyze them using artificial intelligence. The app recognizes text in pictures using OCR and can answer natural-language questions about the text.<br><br>
+            Checkpoint B:<br />
+            For this checkpoint, I have implemented two machine learning
+            features.<br />
+            The first is the ability to create a document from a photo using
+            optical character recognition. The model can recognize either
+            printed or handwritten text, although the written-text recognition
+            can sometimes be inconsistent.<br />
+            I have also added the ability to analyze documents. The user can ask
+            any question about the document using natural language (e.g. “How
+            many people have died from COVID-19?”), and the model will try to
+            find a section of the document that answers the question.<br />
+            For the next checkpoint, I want to touch up the user interface and
+            maybe add some additional features. I also want to make some
+            performance optimizations because there are long pauses when loading
+            documents.<br /><br />
 
-If you notice any weird cuts in the video, it's because the app sometimes stops the recording when the camera is opened for some reason.<br><br>
-
-        All the code can be found here: <a href="https://github.com/biquando/Cappstone" target="_blank">https://github.com/biquando/Cappstone</a><br><br>
-
-Checkpoint A:<br>
-I have accomplished my goal for this checkpoint. The basic UI is built, and the app is able to create and store documents. So far, documents can only be created from text, and nothing can be done with them yet. By the next checkpoint, the “Upload Photo” feature will be functional, and the app will (hopefully) be able to read text from the picture via machine learning. In addition, there will be AI-related functions to analyze the text in a document. There are still a couple UI improvements that I want to make before checkpoint C.<br><br>
-
-Checkpoint B:<br>
-For this checkpoint, I have implemented two machine learning features.<br>
-The first is the ability to create a document from a photo using optical character recognition. The model can recognize either printed or handwritten text, although the written-text recognition can sometimes be inconsistent.<br>
-I have also added the ability to analyze documents. The user can ask any question about the document using natural language (e.g. “How many people have died from COVID-19?”), and the model will try to find a section of the document that answers the question.<br>
-For the next checkpoint, I want to touch up the user interface and maybe add some additional features. I also want to make some performance optimizations because there are long pauses when loading documents.<br><br>
-
-Checkpoint C:<br>
-New Features<br>
- - uploading via camera brings up a document scanner to improve detection accuracy<br>
- - user can search the list of documents for a title<br>
- - added an app icon<br>
-UI Improvements<br>
- - long documents can be scrolled<br>
- - "analyze document" button moved to the bottom of the document<br>
- - "create document" button is greyed out when textfield is empty (no more empty documents!)<br>
- - new document button is filled green<br>
- - added a clean, consistent clear button to every text field<br>
- - displays "Couldn't find any text" when a scan is attempted but the model doesn't read anything<br>
-Fixes<br>
- - loads text analysis model in DocumentsView instead of creating a new model whenever a document is opened<br>
- - change photo button deletes previous photo data to prevent weird merging of detected text</p>
-
-
-</body>
-
+            Checkpoint C:<br />
+            New Features<br />
+            - uploading via camera brings up a document scanner to improve
+            detection accuracy<br />
+            - user can search the list of documents for a title<br />
+            - added an app icon<br />
+            UI Improvements<br />
+            - long documents can be scrolled<br />
+            - "analyze document" button moved to the bottom of the document<br />
+            - "create document" button is greyed out when textfield is empty (no
+            more empty documents!)<br />
+            - new document button is filled green<br />
+            - added a clean, consistent clear button to every text field<br />
+            - displays "Couldn't find any text" when a scan is attempted but the
+            model doesn't read anything<br />
+            Fixes<br />
+            - loads text analysis model in DocumentsView instead of creating a
+            new model whenever a document is opened<br />
+            - change photo button deletes previous photo data to prevent weird
+            merging of detected text
+        </p>
+    </body>
 </html>
