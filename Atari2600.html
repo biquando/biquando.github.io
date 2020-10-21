@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Atari2600</title>
+        <meta charset="utf-8" />
+    </head>
+
+    <body style="max-width: 800px">
+        <a href="https://github.com/biquando/Atari2600"
+            >https://github.com/biquando/Atari2600</a
+        >
+        <br />
+        <p>
+            This is a WIP cycle-accurate Atari2600 emulator. I saw Sethbling's
+            <a href="https://www.youtube.com/watch?v=mq7T5_xH24M"
+                >Atari Emulator in Minecraft</a
+            >
+            and was inspired to write my own emulator (but in Java, not
+            Minecraft). I started this project in Sept 2020, but I put it on
+            hold when school started. I plan on finalizing it during winter
+            break.<br /><br />
+
+            So far, the CPU has been completely written, although it's far from
+            bug-free. The TIA has the background, playfield, and player
+            registers implemented, but there are still some option registers
+            that need to be added. There is no user input or sound.<br /><br />
+
+            Here is the background and playfield working:<br />
+        </p>
+        <img style="max-width: 500px" src="resources/atari2600_1.png" />
+        <br />
+        <p>
+            Here are the 2 players rendered with the registers being incremented
+            every scanline, as well as playfield mirroring:<br />
+        </p>
+        <img style="max-width: 500px" src="resources/atari2600_2.png" />
+        <p>
+            If I try to run the emulator with a Donkey Kong rom, the first few
+            lines get rendered but the rest of the screen is blank for some
+            reason. The fact that there is anything rendering at all means that
+            it is more likely because the TIA is incomplete than because of a
+            CPU bug.<br />
+        </p>
+        <img style="max-width: 500px" src="resources/atari2600_3.png" />
+    </body>
+</html>
